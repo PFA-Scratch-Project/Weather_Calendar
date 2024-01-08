@@ -1,12 +1,13 @@
 import React from 'react';
-
+import Task from '../components/task.jsx';
 
 const TasksContainer = () => {
 
     return (
         <div className='tasksOuterContainer'>
           <div className='taskContainer'>
-               Tasks here
+            <h2> Tasks </h2>
+            <Task />
           </div>
         </div>
     )
