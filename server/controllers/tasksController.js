@@ -1,4 +1,5 @@
-const db = require('../models/dataModels');
+const db = require('../models/dataModel.js');
+
 
 const tasksController = {};
 
@@ -26,6 +27,7 @@ tasksController.getTasks = async (req, res, next) => {
 
 tasksController.addTask = async (req, res, next) => {
     const { user_id, date, title, description } = req.body;
+    console.log(req.body);
     console.log('title & description: ', title, description);
 
     const queryValues = [
