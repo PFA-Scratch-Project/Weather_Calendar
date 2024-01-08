@@ -1,17 +1,21 @@
 import React, {useState, useEffect} from 'react'; 
 
-
 const Weather = () => {
     const [weather, showWeather] = useState();
+    const rawDate =new Date().toDateString();
 
     useEffect(() => {
-        fetch('http://api.weatherapi.com/v1/current.json?key=348c3c87a6fc4cfc838200532240601&q=New York&aqi=no')
+        fetch('http://api.weatherapi.com/v1/current.json?key=348c3c87a6fc4cfc838200532240601&q=new york &aqi=no')
         .then(response => response.json())
         .then(data => {
             const weatherNow = [];
             weatherNow.push(
-            <div id='fc'> 
-                <p> {data.current.temp_f} / {data.current.temp_c} </p> 
+            <div className='weatherData' key='weather'> 
+                <p><span className='weatherText' id='date'>Date: </span> <span>{rawDate}</span></p>
+                <p><span className='weatherText' id='city'>City: </span><span>{data.location.name} </span></p> 
+                <img src={data.current.condition.icon}/>
+                <p><span className='weatherText' id='weather'>Weather: </span><span>{data.current.condition.text} </span></p> 
+                <p><span className='weatherText' id='tempfahrenheit'>Temperature: </span><span>{`${data.current.temp_f} °F`}/ {`${data.current.temp_c} °C`} </span></p>  
             </div>);
             showWeather(weatherNow);
         })

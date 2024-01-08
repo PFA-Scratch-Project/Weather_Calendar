@@ -1,5 +1,6 @@
 body{
-    background-color: antiquewhite;
+    font-family:'Cabin', sans-serif;
+    background-image: linear-gradient(to right top, #da68a9, #b361a4, #ba83ca, #927eb6, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #5dc2d7, #46eefa, #b1e4e0);
 }
 .appContainer {
     border: solid 5px red;
@@ -47,3 +48,18 @@ body{
         padding: 1rem;
     }
 }
+
+.weatherData {
+height: 28vh;
+width: 20rem;
+border: solid 1px orange;
+}
+
+.weatherText {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+
+
