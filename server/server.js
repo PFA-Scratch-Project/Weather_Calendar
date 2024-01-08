@@ -19,10 +19,7 @@ app.use('/build', express.static(path.join(__dirname, '../build')));
 // });
 
 
-
-
 app.get('/',
-    weatherController.getWeather,
     tasksController.getTasks,
     (req, res) => {
         res.status(200).send(res.locals.all)
@@ -34,7 +31,6 @@ app.post('/addTasks',
     (req, res) => {
         res.status(200).send(res.locals.dayTasks);
     })
-
 
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}...`));
