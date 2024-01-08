@@ -12,20 +12,20 @@ module.exports = {
     filename: 'bundle.js',
   },
   mode: process.env_NODE_ENV,
-  module:{
-    rules:[
+  module: {
+    rules: [
       {
         test: /\.jsx?/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options:{
+          options: {
             presets: [
               ['@babel/preset-env', { targets: 'defaults' }],
               ['@babel/preset-react', { targets: 'defaults' }],
             ]
           }
-    
+
         }
       },
       {
@@ -46,7 +46,7 @@ module.exports = {
       directory: path.join(__dirname, './build'),
       publicPath: '/'
     },
-    proxy: {'/': 'http://localhost:3000'}, 
+    proxy: { '/': 'http://localhost:3000', '/addTasks': 'http://localhost:3000' },
     port: 8080
   },
   plugins: [new HtmlWebpackPlugin({
