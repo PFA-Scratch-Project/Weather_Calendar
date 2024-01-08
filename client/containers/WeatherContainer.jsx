@@ -5,7 +5,6 @@ const WeatherContainer = () => {
 
     return(
         <div className='weatherContainer'>
-             <h3>weather container here</h3>
              <Weather/>
         </div>
     )
