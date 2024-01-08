@@ -30,7 +30,7 @@ app.get('/',
 app.post('/addTasks',
     tasksController.addTask,
     (req, res) => {
-        res.status(200).send(res.locals.addedTask);
+        res.status(200);
     })
 
 // Catch all handler
