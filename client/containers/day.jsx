@@ -1,11 +1,13 @@
 import React from 'react';
+import Weather from '../components/weather.jsx';
 
 const DayContainer = () => {
 
     return(
-        <div className='dayOuterContainer'>
+      <div className='dayOuterContainer'>
         <div className='dayContainer'>
-             Day here
+          <h2> 1 </h2>
+          <Weather />
         </div>
       </div>
     )
