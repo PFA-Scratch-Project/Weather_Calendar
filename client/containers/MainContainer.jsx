@@ -1,19 +1,15 @@
 import React from 'react';
-import DayContainer from './Day.jsx';
-import MonthContainer from './Month.jsx';
-import WeekContainer from './Week.jsx'; 
+import MonthContainer from './MonthContainer.jsx';
+
 
 
 const MainContainer = () => {
 
     return (
-      <div className="mainContainer">
-        <div className="outerBox">
+        <div className="mainContainer">
+          <h2>Main Container</h2>
           <MonthContainer/>
-          <WeekContainer/>
-          <DayContainer/>
         </div>
-      </div>
     )
     
 }

@@ -83,3 +83,29 @@ export default Weather;
         </div>
     );
  */
+
+    /////////future forecast
+//     fetch('http://api.weatherapi.com/v1/forecast.json?key=6d5b69770cb5476eb14144120240601&q=new york&days=3')
+//     .then(response => response.json())
+//     .then(weatherData => {
+//          console.log('location:', weatherData.location.name);
+//          console.log('localDate:', weatherData.location.localtime.slice(0, -5));
+//          console.log('currentWeather:', weatherData.current.condition.text);
+//          console.log('weatherIcon:', weatherData.current.condition.icon)
+//          console.log('currentTempFahrenheit:', `${weatherData.current.temp_f} °F`);
+//          console.log('currentTempCelsius:', `${weatherData.current.temp_c} °C`);
+//          console.log('currentHumidity:', weatherData.current.humidity);
+//          console.log('tomorrowDate:',  weatherData.forecast.forecastday[0].date);
+//          console.log('tomorrowWeather:',  weatherData.forecast.forecastday[0].day.condition.text);
+//          console.log('tomorrowWeatherIcon:',  weatherData.forecast.forecastday[0].day.condition.icon);
+//          console.log('tomorrowTempFahrenheit:',  `${weatherData.forecast.forecastday[0].day.avgtemp_f} °F`);
+//          console.log('tomorrowTempCelsius:',  `${weatherData.forecast.forecastday[0].day.avgtemp_c} °C`);
+//          console.log('tomorrowHumidity:',  weatherData.forecast.forecastday[0].day.avghumidity);
+//          console.log('dayAfterTomorrowDate:',  weatherData.forecast.forecastday[1].date);
+//          console.log('dayAfterTomorrowWeather:',  weatherData.forecast.forecastday[1].day.condition.text);
+//          console.log('dayAfterTomorrowWeatherIcon:',  weatherData.forecast.forecastday[1].day.condition.icon);
+//          console.log('dayAfterTomorrowTempFahrenheit:', `${weatherData.forecast.forecastday[1].day.avgtemp_f} °F`);
+//          console.log('dayAfterTomorrowTempCelsius:', `${weatherData.forecast.forecastday[1].day.avgtemp_c} °C`);
+//          console.log('tomorrowHumidity:',  weatherData.forecast.forecastday[1].day.avghumidity);
+//     })
+//       .catch(error => console.log('failed to fetch weather data'));

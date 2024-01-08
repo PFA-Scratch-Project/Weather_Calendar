@@ -4,7 +4,7 @@ import taskReducer from './taskSlice.js';
 
 // configureStore requires a reducer argument
 export default configureStore({ 
-    reducer: {
-        task: taskReducer,
-    }
+  reducer: {
+    task: taskReducer,
+  }
 });

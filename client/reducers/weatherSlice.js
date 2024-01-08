@@ -4,19 +4,19 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const initialState = {
-    weather: [],
-    loading: false,
-    error: ''
+  weather: [],
+  loading: false,
+  error: ''
 }
 
 export const weatherApi = createApi({
-    reducerPath: 'weatherApi',
-    baseQuery: fetchBaseQuery({baseUrl: 'http://api.weatherapi.com/v1'}),
-    endpoints: (builder) => ({
-        getCurrent: builder.query({
-            query: () => 'current.json'
-        })
+  reducerPath: 'weatherApi',
+  baseQuery: fetchBaseQuery({baseUrl: 'http://api.weatherapi.com/v1'}),
+  endpoints: (builder) => ({
+    getCurrent: builder.query({
+      query: () => 'current.json'
     })
+  })
 })
 
 export const { useGetCurrentQuery } = weatherApi;
