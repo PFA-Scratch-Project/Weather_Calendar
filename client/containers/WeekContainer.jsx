@@ -1,13 +1,13 @@
 import React from 'react';
+import DayContainer from './DayContainer.jsx';
 
 const WeekContainer = () => {
 
     return(
-        <div className='weekOuterContainer'>
         <div className='weekContainer'>
-             Week here
+          <h3>Week container here</h3>
+          <DayContainer/>
         </div>
-      </div>
     )
 }
 

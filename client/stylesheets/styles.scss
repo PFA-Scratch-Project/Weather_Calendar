@@ -1,0 +1,49 @@
+body{
+    background-color: antiquewhite;
+}
+.appContainer {
+    border: solid 5px red;
+    width: 99%;
+    height:100vh;
+}
+.mainContainer {
+    border: solid 5px rgb(52, 55, 56);
+    width: 98%;
+    height:90vh;
+    padding: 1rem;
+
+    .monthContainer {
+    border: solid 3px rgb(255, 145, 0);
+    width: 97%;
+    height:82vh;
+    padding: 1rem;
+    }
+}
+
+.weekContainer {
+    border: solid 3px rgb(255, 0, 217);
+    width: 95%;
+    height:73vh;
+    padding: 1rem;
+}
+
+.dayContainer{
+    border: solid 2px rgb(13, 21, 1);
+    width: 92%;
+    height:65vh;
+    padding: 1rem;
+
+    .weatherContainer {
+        border: solid 1px rgb(37, 86, 163);
+        width: 88%;
+        height:27vh;
+        padding: 1rem;
+    }
+
+    .tasksContainer {
+        border: solid 1px rgb(142, 37, 163);
+        width: 88%;
+        height:28vh;
+        padding: 1rem;
+    }
+}

@@ -4,11 +4,9 @@ import React from 'react';
 const TasksContainer = () => {
 
     return (
-        <div className='tasksOuterContainer'>
-          <div className='taskContainer'>
-               Tasks here
+          <div className='tasksContainer'>
+               <h3>Tasks container here</h3>
           </div>
-        </div>
     )
 }
 
