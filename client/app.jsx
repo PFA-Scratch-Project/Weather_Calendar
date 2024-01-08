@@ -1,15 +1,12 @@
 import React from "react";
-import MainContainer from "./containers/MainContainer.jsx";
+import MainContainer from "./containers/mainContainer.jsx";
 
 const App = ()=> {
     return(
-        <div>
-        <h1>Pink Fairy Armadillo</h1>
-        <div>
+        <div className="appContainer">
+            <h1>Pink Fairy Armadillo</h1>
             <MainContainer/>
-            </div>
         </div>
-        
     )
 };
 
