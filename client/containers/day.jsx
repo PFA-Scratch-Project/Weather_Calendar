@@ -1,5 +1,7 @@
 import React from 'react';
 import Weather from '../components/weather.jsx';
+import TasksContainer from './Tasks.jsx';
+
 
 const DayContainer = () => {
 
@@ -8,6 +10,7 @@ const DayContainer = () => {
         <div className='dayContainer'>
           <h2> 1 </h2>
           <Weather />
+          <TasksContainer />
         </div>
       </div>
     )
