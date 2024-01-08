@@ -1,3 +1,4 @@
+const formData = require("express-form-data");
 const express = require('express');
 const path = require('path');
 const PORT = 3000;
@@ -9,6 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(formData.union())
 
 app.use('/build', express.static(path.join(__dirname, '../build')));
 
@@ -17,6 +19,19 @@ app.use('/build', express.static(path.join(__dirname, '../build')));
 // app.get('/', (req, res) => {
 //     res.sendFile(path.join(__dirname, '../index.html'));
 // });
+
+app.get('/',
+    tasksController.getTasks,
+    (req, res) => {
+        res.status(200).send(res.locals.all)
+    })
+
+
+app.post('/addTasks',
+    tasksController.addTask,
+    (req, res) => {
+        res.status(200).send(res.locals.addedTask);
+    })
 
 // Catch all handler
 app.use((req, res) => {
@@ -34,19 +49,6 @@ app.use((err, req, res, next) => {
     console.log('Global Error: ', errObj.log);
     return res.status(errObj.status).json(errObj.message);
 })
-
-app.get('/',
-    tasksController.getTasks,
-    (req, res) => {
-        res.status(200).send(res.locals.all)
-    })
-
-
-app.post('/addTasks',
-    tasksController.addTask,
-    (req, res) => {
-        res.status(200).send(res.locals.addedTask);
-    })
 
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}...`));
