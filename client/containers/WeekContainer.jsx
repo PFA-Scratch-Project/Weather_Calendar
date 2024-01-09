@@ -3,10 +3,13 @@ import DayContainer from './DayContainer.jsx';
 
 const WeekContainer = () => {
 
+    const weekArray = [];
+
+    
+
     return(
-        <div className='weekContainer'>
-          <h3>Week container here</h3>
-          <DayContainer/>
+        <div style={{display: 'inline-flex'}} className='weekContainer'>
+          <span> <DayContainer/> </span> 
         </div>
     )
 }

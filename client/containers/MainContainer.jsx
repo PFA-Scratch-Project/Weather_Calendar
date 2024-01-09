@@ -7,7 +7,8 @@ const MainContainer = () => {
 
     return (
         <div className="mainContainer">
-          <h2>Main Container</h2>
+         
+
           <MonthContainer/>
         </div>
     )

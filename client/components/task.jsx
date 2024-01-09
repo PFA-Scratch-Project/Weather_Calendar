@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTask } from '../reducers/taskSlice.js';
+import orangeCatScream from './orangeCatScream.jpg';
 
 
 const Task = () => {
@@ -18,7 +19,9 @@ const Task = () => {
     
     return (
         <div>
-            <button onClick={() => dispatch(addTask())}> New Task </button>
+            {/* <button id='catbutton' onClick={() => dispatch(addTask())}> */}
+                 <img id="cat" src={orangeCatScream} onClick={() => dispatch(addTask())}/> 
+            {/* </button> */}
 
             { buttonClicked ?  
                 <div>
@@ -26,7 +29,7 @@ const Task = () => {
                         <input type="text" name="title" placeholder="Title" id="title" />
                         <input type="text" name="description" placeholder="Description" id="description" />
                         <input type="hidden" name="date" value={date} />
-                        <button type="submit"> Submit </button>
+                        <button type="submit" className="submitbutton"> Submit </button>
                     </form>
                 </div>
                 :

@@ -39,6 +39,13 @@ module.exports = {
           'sass-loader',
         ]
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i, 
+        loader: 'file-loader',
+        // options: {
+        //   name: '/public/icons/[name].[ext]'
+        // }
+      }
     ]
   },
   devServer: {

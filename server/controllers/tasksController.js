@@ -45,7 +45,7 @@ tasksController.addTask = async (req, res, next) => {
         const addTaskResult = await db.query(addTaskQuery, queryValues);
         res.locals.addedTask = addTaskResult;
     }
-    catch {
+    catch (err) {
         return next({
             log: `Error adding task: ${err}`,
             message: 'Error adding task to profile'

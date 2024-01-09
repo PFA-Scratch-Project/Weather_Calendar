@@ -6,8 +6,7 @@ const MonthContainer = () => {
     return(
    
         <div className='monthContainer'>
-             <h2>Month container here</h2>
-             <WeekContainer/>
+           <WeekContainer/>
         </div>
 
     )

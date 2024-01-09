@@ -1,65 +1,72 @@
 body{
-    font-family:'Cabin', sans-serif;
+    height: 130vh;
+    font-family:'Nunito', sans-serif;
     background-image: linear-gradient(to right top, #da68a9, #b361a4, #ba83ca, #927eb6, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #5dc2d7, #46eefa, #b1e4e0);
 }
 .appContainer {
-    border: solid 5px red;
-    width: 99%;
-    height:100vh;
+    padding: 2rem;
+ 
 }
 .mainContainer {
-    border: solid 5px rgb(52, 55, 56);
-    width: 98%;
-    height:90vh;
-    padding: 1rem;
+   
 
     .monthContainer {
-    border: solid 3px rgb(255, 145, 0);
-    width: 97%;
-    height:82vh;
-    padding: 1rem;
+
     }
 }
 
 .weekContainer {
-    border: solid 3px rgb(255, 0, 217);
-    width: 95%;
-    height:73vh;
-    padding: 1rem;
-}
+  
 
 .dayContainer{
-    border: solid 2px rgb(13, 21, 1);
-    width: 92%;
-    height:65vh;
-    padding: 1rem;
+  
+   margin-right: 50px;
 
     .weatherContainer {
-        border: solid 1px rgb(37, 86, 163);
-        width: 88%;
-        height:27vh;
-        padding: 1rem;
+       margin-bottom: 4rem;
+     
     }
 
     .tasksContainer {
-        border: solid 1px rgb(142, 37, 163);
-        width: 88%;
-        height:28vh;
-        padding: 1rem;
+      
     }
+}
 }
 
 .weatherData {
-height: 28vh;
-width: 20rem;
-border: solid 1px orange;
+
 }
 
 .weatherText {
     font-weight: 700;
     font-size: 1.2rem;
+    color: rgb(83, 12, 83);
 }
 
+// #cat {
+//     border-radius: 50%;
+//     width: 50%;
+//     height: 50%;
+// }
 
+#cat {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
 
+input {
+    line-height: 1.7rem;
+    border-radius: 15px;
+    width: 10rem;
+}
+
+button {
+    line-height: 1.3rem;
+    border-radius: 15px;
+    width: 5rem;
+    outline: none;
+    margin-bottom: 1rem;
+    background-color: #ba83ca;
+}
 

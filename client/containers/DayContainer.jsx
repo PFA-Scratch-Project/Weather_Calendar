@@ -7,9 +7,8 @@ const DayContainer = () => {
 
     return(
         <div className='dayContainer'>
-             <h3>Day container here</h3>
-             <WeatherContainer/>
-             <TasksContainer/>
+             <div><WeatherContainer/></div>
+             <div><TasksContainer/></div>
         </div>
     )
 }
